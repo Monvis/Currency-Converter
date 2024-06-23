@@ -9,18 +9,97 @@
 
 /* === Common === */
 
-$maxWidth: ( x );
+$maxWidth: ( 600 );
 
 /* START */
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #3b3b3b;
+    color: #fff;
 }
 
-.container {
-    max-width: 1175px;
-    margin: 0 auto;
+.app {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 0 20px;
 }
 
+.container {
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.mr-35 {
+    margin-right: 35px;
+}
+
 /*  */
+
+.form {
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main {
+    margin-bottom: 20px;
+}
+
+.course {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    &__value {
+        font-weight: bold;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column input {
+    padding-left: 5px;
+}
+
+.column select, input {
+    height: 30px;
+}
+
+.form-control {
+    margin-top: 5px;
+    border-radius: 5px;
+}

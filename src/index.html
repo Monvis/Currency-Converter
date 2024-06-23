@@ -8,7 +8,73 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	
+	<div class="app">
+		<form class="form">
+			<div class="container">
+				<header class="header">
+					<h1 class="title">Конвертер валют</h1>
+				</header>
+				<main class="main">
+					<div class="course">
+						<div class="course__item">
+							<h2 class="course__title">Курс USD</h2>
+							<p class="course__value" data-value="USD">--.--</p>
+						</div>
+						<div class="course__item">
+							<h2 class="course__title">Курс EUR</h2>
+							<p class="course__value" data-value="EUR">--.--</p>
+						</div>
+						<div class="course__item">
+							<h2 class="course__title">Курс GPB</h2>
+							<p class="course__value" data-value="GPB">--.--</p>
+						</div>
+					</div>
+				</main>
+				<footer class="footer">
+					<div class="column mr-35">
+						<label for="name">Отдаю:</label>
+
+						<select
+						disabled
+						class="form-control"
+						name=""
+						id="">
+							<option selected value="">RUB — Рубли</option>
+						</select>
+
+						<input
+						class="form-control"
+						id="name"	
+						autofocus
+						name="name"
+						type="number"
+						>
+					</div>
+					<div class="column">
+						<label for="name">Получаю:</label>
+
+						<select
+						class="form-control"
+						name=""
+						id="">
+							<option value="">USD — Доллары</option>
+							<option value="EUR">EUR — Евро</option>
+							<option value="GPB">GPB — Фунты стерлингов</option>
+						</select>
+
+						<input
+						class="form-control"
+						id="name"
+						name="name"
+						type="number"
+						>
+					</div>
+				</footer>
+			</div>
+			<!-- //container -->
+		</form>
+	</div>
+	<!-- //app -->
 	<script src="source/js/script.min.js"></script>
 </body>
 </html>
