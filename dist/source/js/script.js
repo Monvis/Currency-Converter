@@ -5,6 +5,10 @@ const elementUSD = document.querySelector('[data-value="USD"]');
 const elementEUR = document.querySelector('[data-value="EUR"]');
 const elementGBP = document.querySelector('[data-value="GBP"]');
 
+const input = document.querySelector('#input');
+const select = document.querySelector('#select');
+const result = document.querySelector('#result');
+
 getResponse();
 
 async function getResponse() {
@@ -41,3 +45,10 @@ async function getResponse() {
         elementGBP.classList.add('bottom')
     }
 }
+
+function valueConverter() {
+    result.value = parseFloat(input.value / rates[select.value].Value).toFixed(2);
+}
+
+input.oninput = valueConverter;
+select.oninput = valueConverter;
