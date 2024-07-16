@@ -36,6 +36,20 @@ body {
     border-radius: 5px;
 }
 
+// Rates status
+
+.top {
+    color: #45ce23
+}
+
+.bottom {
+    color: #ff3939;
+}
+
+.mr-35 {
+    margin-right: 35px;
+}
+
 .mr-35 {
     margin-right: 35px;
 }
@@ -76,7 +90,7 @@ body {
     }
 
     &__value {
-        font-weight: bold;
+        font-size: 30px;
     }
 }
 

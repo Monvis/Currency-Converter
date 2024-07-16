@@ -123,6 +123,18 @@ body {
   border-radius: 5px;
 }
 
+.top {
+  color: #45ce23;
+}
+
+.bottom {
+  color: #ff3939;
+}
+
+.mr-35 {
+  margin-right: 35px;
+}
+
 .mr-35 {
   margin-right: 35px;
 }
@@ -165,7 +177,7 @@ body {
 }
 
 .course__value {
-  font-weight: bold;
+  font-size: 30px;
 }
 
 .footer {
